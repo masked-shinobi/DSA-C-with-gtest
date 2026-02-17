@@ -1,0 +1,13 @@
+﻿# CLion / CMake
+cmake-build-debug/
+.idea/
+
+# C++ build artifacts
+*.exe
+*.obj
+*.o
+*.a
+
+# OS files
+.DS_Store
+Thumbs.db
