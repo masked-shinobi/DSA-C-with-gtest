@@ -66,7 +66,61 @@ void printNodes(ListNode* head){
     cout<< " NULL \n";
 }
 
+ListNode* deletestart(ListNode* head){
+    if(head == nullptr){
+        return nullptr;
+    }
 
+    ListNode* temp = head;
+    head = head->next;
+    delete temp;
+    return head;
+
+}
+
+ListNode* deleteend(ListNode* head){
+    if(head == nullptr){
+        return nullptr;
+    }
+    if(head->next == nullptr){
+        delete head;
+        return nullptr;
+    }
+    ListNode* temp = head;
+
+    while(temp->next->next != nullptr){
+        temp = temp->next;
+    }
+
+    delete temp->next;
+    temp -> next =nullptr; // why is this line if we already deleted temp->next
+
+    return head;
+}
+
+ListNode* deletemid(ListNode* head, int pos){
+    if (head == nullptr)
+        return nullptr;
+    if (pos == 1)
+        return deletestart(head);
+    // move to position pos - 1
+    ListNode* temp = head;
+    for(int i = 1;i < pos - 1 && temp->next != nullptr; i++){
+        temp = temp->next;
+    }
+
+    //check position validity
+    if(temp->next == nullptr){
+        cout<<"InvalidCode";
+        return head;
+    }
+
+    ListNode* nodeToDelete = temp->next;
+    temp->next = nodeToDelete->next;
+    delete nodeToDelete;
+
+    return head;
+}
 int main(){
 
     return 0;
