@@ -27,6 +27,9 @@ file(GLOB TEST_FILES
 add_executable(runTests
         ${SOURCE_FILES}
         ${TEST_FILES}
+        Sorting-algorithms/Tests/test_sort.cpp
+        Sorting-algorithms/Tests/test.cpp
+        Linked-list/linked_list_basic.cpp
 )
 
 # where headers are located
