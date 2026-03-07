@@ -30,6 +30,11 @@ add_executable(runTests
         Sorting-algorithms/Tests/test_sort.cpp
         Sorting-algorithms/Tests/test.cpp
         Linked-list/linked_list_basic.cpp
+        "Placement Training/fibonacci_series_iterative_way.cpp"
+        "Placement Training/fibonacci_series.cpp"
+        "Placement Training/sum_elements_into_array.cpp"
+        "Placement Training/print_even_no_list.cpp"
+        "Placement Training/sum_elements_where_end_2and4.cpp"
 )
 
 # where headers are located
