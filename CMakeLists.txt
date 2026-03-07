@@ -35,6 +35,7 @@ add_executable(runTests
         "Placement Training/sum_elements_into_array.cpp"
         "Placement Training/print_even_no_list.cpp"
         "Placement Training/sum_elements_where_end_2and4.cpp"
+        "Placement Training/find_max_and_min.cpp"
 )
 
 # where headers are located
