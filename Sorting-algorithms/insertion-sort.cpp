@@ -5,12 +5,12 @@
 using namespace std;
 
 vector<int> insertion_sort(vector<int> arr){
-    // loop the completely i - to length of array  (note : the i should start from 2nd element as j should keep the track of the sorted array )
-    // set current value as i
-    // use a while loop till condition true move till the left position
-    // condition : j greater than 0 and jth index value greater the current value
-    // push it to the right
-    // then jth next value to be our value -- current value
+//     loop the completely i - to length of array  (note : the i should start from 2nd element as j should keep the track of the sorted array )
+//     set current value as i
+//     use a while loop till condition true move till the left position
+//     condition : j greater than 0 and jth index value greater the current value
+//     push it to the right
+//     then jth next value should be our value -- current value
 
     for(int i = 1; i < arr.size(); i++){
         int current_value = arr[i];

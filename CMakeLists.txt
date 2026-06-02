@@ -36,6 +36,19 @@ add_executable(runTests
         "Placement Training/print_even_no_list.cpp"
         "Placement Training/sum_elements_where_end_2and4.cpp"
         "Placement Training/find_max_and_min.cpp"
+        Sorting-algorithms/Tests/test-input.cpp
+        Sorting-algorithms/Tests/test_sorting_next.cpp
+        "Sorting-algorithms/SRM PLACEMENT TRAINING/sort-algorithms.cpp"
+        Advanced-DSA-Training/Day-1/level-1.cpp
+        Advanced-DSA-Training/Day-1/level-2.cpp
+        Advanced-DSA-Training/Day-1/level-3.cpp
+        Advanced-DSA-Training/Day-1/level-3.cpp
+        Advanced-DSA-Training/Day-1/level-4.cpp
+        Advanced-DSA-Training/Day-2/isprime.cpp
+        Advanced-DSA-Training/Day-2/lab1.cpp
+        Advanced-DSA-Training/Day-2/lab.cpp
+        Advanced-DSA-Training/Day-2/lab.cpp
+        Advanced-DSA-Training/Day-1/level-3-part.cpp
 )
 
 # where headers are located
