@@ -49,6 +49,11 @@ add_executable(runTests
         Advanced-DSA-Training/Day-2/lab.cpp
         Advanced-DSA-Training/Day-2/lab.cpp
         Advanced-DSA-Training/Day-1/level-3-part.cpp
+        Advanced-DSA-Training/Day-1/level-5.cpp
+        Advanced-DSA-Training/Day-1/level-5.cpp
+        Advanced-DSA-Training/Day-1/level-part-2.cpp
+        Advanced-DSA-Training/Day-3/string_problem2.cpp
+        "Advanced-DSA-Training/Day-3/Kadane's Algorithm.cpp"
 )
 
 # where headers are located
