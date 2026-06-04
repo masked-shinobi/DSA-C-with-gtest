@@ -56,6 +56,8 @@ add_executable(runTests
         "Advanced-DSA-Training/Day-3/Kadane's Algorithm.cpp"
         Advanced-DSA-Training/Day-3/subarray_sum_equals_k.cpp
         Advanced-DSA-Training/Day-3/linked_list.cpp
+        Advanced-DSA-Training/Day-5/stack-array.cpp
+        Advanced-DSA-Training/Day-5/circular_queue_array.cpp
 )
 
 # where headers are located

@@ -1,0 +1,27 @@
+### Day 1
+(Code)1. Storing menu (id price) and calculating the cart items (id quantity) -- hashmap
+(Idea)2. Find Kth largest Number -- minheap
+(Code)3. Find the achievement in shorter window -- sliding window
+(Code)4. Find the window that exactly matches the target value (negative available) -- prefix sum
+(Unsolved)5. Dynamic Knapsack
+(Code)6. Sort - Merge, Quick
+(Code)7. Sort - Insertion, Selection, Bubble
+(Idea)8. Sort - Heap, Tim, Shell
+
+### Day 2
+(Code)1. Prime number, GCD, Euclidean GCD, Factorial Recursion
+(Code)2. (bernesh) Find max substring without repeition -- sliding window + hashmap
+
+### Day 3
+(Code)1. Kadane's Algorithm
+(Code)2. Prefix sum -- maximum subarray with target of K numbers
+(Code)3. Linked List
+(Code)4. Find pattern from the String
+leetcode
+--------
+(Solved)1. Majority element
+(Solved)2. kadane's algorithm
+(Solved)3. longest substring on string with k replacements of letters
+
+###Day 4
+
