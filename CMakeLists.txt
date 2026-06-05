@@ -58,6 +58,15 @@ add_executable(runTests
         Advanced-DSA-Training/Day-3/linked_list.cpp
         Advanced-DSA-Training/Day-4/stack-array.cpp
         Advanced-DSA-Training/Day-4/circular_queue_array.cpp
+        Advanced-DSA-Training/Day-4/level-1.cpp
+        Advanced-DSA-Training/Day-4/level-3.cpp
+        Advanced-DSA-Training/Day-4/level-2-harish.cpp
+        Advanced-DSA-Training/Day-4/level-4.cpp
+        Advanced-DSA-Training/Day-4/level-6.cpp
+        Advanced-DSA-Training/Day-4/level-7.cpp
+        Advanced-DSA-Training/Day-5/Level-1.cpp
+        Advanced-DSA-Training/Day-5/level-2.cpp
+        Advanced-DSA-Training/Day-5/level-3.cpp
 )
 
 # where headers are located
