@@ -25,7 +25,6 @@ int main() {
                     currentwindow = false;
                     break;
                 }
-
             }
             if(currentwindow){
                 match = true;

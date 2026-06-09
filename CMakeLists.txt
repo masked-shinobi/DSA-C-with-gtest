@@ -67,6 +67,11 @@ add_executable(runTests
         Advanced-DSA-Training/Day-5/Level-1.cpp
         Advanced-DSA-Training/Day-5/level-2.cpp
         Advanced-DSA-Training/Day-5/level-3.cpp
+        Advanced-DSA-Training/Day-5/level-4.cpp
+        Advanced-DSA-Training/Day-5/level-5.cpp
+        Advanced-DSA-Training/Day-1/minheapwithstrings.h
+        "Advanced-DSA-Training/Day-6 hashing algo/level-1.cpp"
+        "Advanced-DSA-Training/Day-6 hashing algo/level-2.cpp"
 )
 
 # where headers are located
