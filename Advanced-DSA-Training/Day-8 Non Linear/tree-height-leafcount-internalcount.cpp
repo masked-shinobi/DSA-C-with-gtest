@@ -43,8 +43,7 @@ int height(TreeNode* root){
 int leaves(TreeNode* root){
 
     // LOGIC
-//leaf(root)
-//
+
 //if root == nullptr
 //    return 0
 //

@@ -41,6 +41,16 @@ if without releationship not mentioned we can use anything BFS and DFS and also 
 -----------------------------------------------------------------------------------------------------
 
 
+stack usage - O(n) space
+recursion too - O(n) space
+Binary tree - traversal - always O(n)
+binary search tree then searching element would be O(logn)
+
+is it possible to traverse without space in binary tree?
+we can how - moris traversal (reduce space)
+forming temparory link and then cut off menthod is used
+
+
 
 
 
