@@ -72,6 +72,10 @@ add_executable(runTests
         Advanced-DSA-Training/Day-1/minheapwithstrings.h
         "Advanced-DSA-Training/Day-6 hashing algo/level-1.cpp"
         "Advanced-DSA-Training/Day-6 hashing algo/level-2.cpp"
+        "Advanced-DSA-Training/Day-6 hashing algo/hack-1.cpp"
+        "Advanced-DSA-Training/Day-6 hashing algo/hack-2.cpp"
+        Linked-list/monotonic_stack.cpp
+        "Advanced-DSA-Training/Day-8 Non Linear/tree-height-leafcount-internalcount.cpp"
 )
 
 # where headers are located

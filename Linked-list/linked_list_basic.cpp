@@ -11,12 +11,12 @@ struct ListNode {
         next = nullptr;
     }
 };
-
-ListNode* insertstart(ListNode* head, int value){
-    ListNode* newNode = new ListNode(value);
-    newNode -> next = head;
-    return newNode;
-}
+//
+//ListNode* insertstart(ListNode* head, int value){
+//    ListNode* newNode = new ListNode(value);
+//    newNode -> next = head;
+//    return newNode;
+//}
 
 ListNode* insertend(ListNode* head, int value){
     ListNode* newNode = new ListNode(value);

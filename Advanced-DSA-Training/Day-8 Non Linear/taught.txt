@@ -1,0 +1,52 @@
+non linear - usage - there might be multi options - eg folder structures and multi sub folders and then when not sure we can go for non linear
+
+if one node to multi node its a graph - also trees are graph
+so simply they are graphs
+
+tree
+
+1. real example - DOM representation - tree
+tree - abstract data Structure - implementation part - other than Node structure
+
+all graph rep possible
+
+generally link structure and pointer reference also use arrays as well
+
+heaps are complete binary tree -- level wise they are completely full - same structure same as perfect binary but exception to the last level
+
+but also the elements to be aligned to the left aligned so the right is the only element is addable
+
+if array rep is best why the hell we go for linked node structure -
+Problems in array :
+insertion and deletion takes a lot of shifting
+
+traversal :
+left = 2n + 1
+right = 2n + 2 this works on the array representation
+
+if tree is not complete bunary tree - not balanced and skewed
+
+not sure about tree structure the array is the worst option we can only rep using linked Node
+
+
+BTree - we use nested array structure for example -- only time we use array real time
+
+BFS and DFS theory taught
+-----------------------------------------------------------------------------------------------------
+
+Q > if max finding in tree and the maximum element can be wherever ?
+
+if without releationship not mentioned we can use anything BFS and DFS and also sometimes randomised
+
+-----------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
