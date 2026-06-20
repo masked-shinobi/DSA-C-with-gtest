@@ -76,6 +76,13 @@ add_executable(runTests
         "Advanced-DSA-Training/Day-6 hashing algo/hack-2.cpp"
         Linked-list/monotonic_stack.cpp
         "Advanced-DSA-Training/Day-8 Non Linear/tree-height-leafcount-internalcount.cpp"
+        Revision/Djikstra.cpp
+        Revision/bellamford.cpp
+        Revision/prims.cpp
+        Revision/prims.cpp
+        Revision/unionFind.cpp
+        Revision/unionFind.cpp
+        Revision/kruskal.cpp
 )
 
 # where headers are located
