@@ -13,8 +13,8 @@ public:
         this->wt = wt;
     }
     // add custom operator to make the sorting based in the wt
-    bool operator<const Edge &other> const{
-        return this->wt < other->wt;
+    bool operator<(const Edge &other) const {
+        return this->wt < other.wt;
     }
 };
 
