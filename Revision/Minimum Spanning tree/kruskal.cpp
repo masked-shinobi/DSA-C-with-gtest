@@ -30,6 +30,11 @@ public:
             rank.push_back(0);
         }
     }
+
+    void addEdge(int u, int v, int wt){
+        edges.push_back(u, v, w);
+    }
+
     void unionbyrank(int a, int b){
         int parA = find(a);
         int parB = find(b);

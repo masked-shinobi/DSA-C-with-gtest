@@ -76,13 +76,29 @@ add_executable(runTests
         "Advanced-DSA-Training/Day-6 hashing algo/hack-2.cpp"
         Linked-list/monotonic_stack.cpp
         "Advanced-DSA-Training/Day-8 Non Linear/tree-height-leafcount-internalcount.cpp"
-        Revision/Djikstra.cpp
-        Revision/bellamford.cpp
-        Revision/prims.cpp
-        Revision/prims.cpp
-        Revision/unionFind.cpp
-        Revision/unionFind.cpp
-        Revision/kruskal.cpp
+        "Revision/Minimum Spanning tree/Djikstra.cpp"
+        "Revision/Minimum Spanning tree/bellamford.cpp"
+        "Revision/Minimum Spanning tree/prims.cpp"
+        "Revision/Minimum Spanning tree/prims.cpp"
+        "Revision/Minimum Spanning tree/unionFind.cpp"
+        "Revision/Minimum Spanning tree/unionFind.cpp"
+        "Revision/Minimum Spanning tree/kruskal.cpp"
+        Revision/arrays/kadanes-algo.cpp
+        Revision/arrays/kadanes-algo.cpp
+        Revision/Linked_list/linked_list-basic.cpp
+        Revision/Linked_list/linked_list-basic.cpp
+        "Revision/stack/queue implementation.cpp"
+        Revision/stack/stack.cpp
+        Revision/queue/queue.cpp
+        Revision/queue/stack_implementation.cpp
+        Advanced-DSA-Training/Day-10/BFS-traversal.cpp
+        Advanced-DSA-Training/Day-10/graph.cpp
+        Advanced-DSA-Training/Day-10/DFS-traversal.cpp
+        Advanced-DSA-Training/Day-10/undirected_cycledetection_dfs.cpp
+        Revision/graph/undirected_cycle_dfs.cpp
+        Revision/graph/DFS-traversal.cpp
+        Revision/graph/graph.cpp
+        Revision/graph/graph.cpp
 )
 
 # where headers are located
