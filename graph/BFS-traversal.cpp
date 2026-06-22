@@ -12,7 +12,7 @@ public:
     Graph(int v){
         this->v = v;
         l = new list<int> [v];
-    }
+    } 
 
     void addEdge(int u, int v){
         l[u].push_back(v);

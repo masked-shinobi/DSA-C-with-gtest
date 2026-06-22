@@ -4,13 +4,13 @@
 
 using namespace std;
 
-struct TreeNode {
+class TreeNode{
+public:
     int value;
     TreeNode* left;
     TreeNode* right;
-
-    TreeNode(int val){
-        value = val;
+    TreeNode(int value){
+        this->value = value;
         left = nullptr;
         right = nullptr;
     }
@@ -42,15 +42,15 @@ int height(TreeNode* root){
 }
 int leaves(TreeNode* root){
 
-    // LOGIC
+//     LOGIC
 
-//if root == nullptr
+// if root == nullptr
 //    return 0
-//
-//if root is leaf
+
+// if root is leaf
 //    return 1
-//
-//return leaf(left) + leaf(right)
+
+// return leaf(left) + leaf(right)
     if(root == nullptr) return 0;
 
     if(root->left == nullptr && root->right == nullptr){

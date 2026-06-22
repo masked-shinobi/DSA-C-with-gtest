@@ -5,17 +5,19 @@
 using namespace std;
 
 
-struct TreeNode {
+class TreeNode{
+public:
+
     int value;
     TreeNode* left;
     TreeNode* right;
-
-    TreeNode(int val){
-        value = val;
+    TreeNode(int value){
+        this->value = value;
         left = nullptr;
         right = nullptr;
     }
 };
+
 
 void inorder(TreeNode* root, int& sum, int& count){
     if(root == nullptr) return;
