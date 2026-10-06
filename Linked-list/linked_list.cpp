@@ -1,20 +1,12 @@
+#include <bits/stdc++.h>
 
+using namespace std;
 
+int main() {
+    int a = 0;
+    int b = 0;
+    // added two variables
+    cout << a + b;
 
-//
-// Created by baska on 10-06-2026.
-//
-
-ListNode* insertatstart(ListNode* head, int value){
-    ListNode* newNode = new ListNode(value);
-    newNode->next = head;
-    return newNode;
+    return 0;
 }
-
-istNode* deleteatstart(ListNode* head){
-    ListNode* deleter = head;
-    head = head->next;
-    delete deleter;
-    return head;
-}
-

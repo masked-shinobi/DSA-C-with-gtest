@@ -31,7 +31,7 @@ int gcd(int a, int b)
     return a;
 }
 
-// Count primes up to n using sieve
+// Count primes up to n using sieve eratothenes
 int countPrimes(int n)
 {
     vector<bool> prime(n + 1, true);

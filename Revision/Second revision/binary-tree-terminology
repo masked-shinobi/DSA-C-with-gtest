@@ -1,0 +1,237 @@
+#include <iostream>
+#include <vector>
+#include <queue>
+
+using namespace std;
+
+class TreeNode{
+public:
+    int value;
+    TreeNode* left;
+    TreeNode* right;
+    TreeNode(int value){
+        this->value = value;
+        left = nullptr;
+        right = nullptr;
+    }
+
+    // height of tree 
+    int heightoftree(TreeNode* root){
+        if(root == nullptr) return;
+
+        int leftheight = heightoftree(root->left);
+        int rightheight = heightoftree(root->right);
+
+        return 1+max(leftheight, rightheight);
+    }
+
+    // count leaves
+    int countleaves(TreeNode* root){
+        if(root == nullptr) return;
+
+        if(root->left == nullptr && root->right == nullptr) return 1;
+
+        return countleaves(root->left) + countleaves(root->right);
+    }
+
+    //internal count
+    int internalcount(TreeNode* root){
+        if(root == nullptr) return 0;
+
+        if(root->left == nullptr && root->right == nullptr) return 0;
+
+        return 1 + internalcount(root->left) + internalcount(root->right);
+    }
+
+    // count total nodes
+    int totalnodes(TreeNode* root){
+        if(root == nullptr) return 0;
+
+        return 1 + totalnodes(root->left) + totalnodes(root->right);
+    }
+
+    //identical tree
+    bool identical(TreeNode* p, TreeNode* q){ // left of root and right of root
+        if(p == nullptr && q == nullptr) return true;
+
+        if(p == nullptr || q == nullptr) return false;
+
+        return p->value == q->value && identical(p->left, q->left) && identical(p->right, q->right);
+    }
+
+    //symmetry
+    bool symmetry(TreeNode* p, TreeNode* q){
+        if(p == nullptr && q == nullptr) return true;
+
+        if(p == nullptr || q == nullptr) return false;
+
+        return symmetry(p->left, q->left) && symmetry(p->right, q->right);
+    }
+
+    // diameter (longest node passed through this node)
+    int diameter(TreeNode* root, int dia){
+        if(root == nullptr) return -1;
+
+        int leftHeight = diameter(root->left, dia);
+        int rightHeight = diameter(root->right, dia);
+
+        dia = max(dia, leftHeight, rightHeight);
+
+        return dia;
+    }
+
+    // BST Validation
+    bool validbst(TreeNode* root,int low,int high){  // low - INT_MIN  high - INT_MAX
+        if(root == nullptr) return true;
+
+        if(root->value <= low || root->value >= high) return false;
+
+        return validbst(root->left, low, root->value) && validbst(root->right, root->value, high);
+    }
+
+    // BST Search
+    bool searchbst(TreeNode* root , int key){
+        if(root == nullptr) return false;
+
+        if(root->value == key) return true;
+
+        return searchbst(root->left, key) || searchbst(root->right, key);
+    }
+
+    //invert a tree
+    int invert(TreeNode* root){
+        if(root == nullptr) return;
+
+        swap(root->left, root->right);
+
+        invert(root->left);
+        invert(root->right);
+    }
+
+    // lowest common ancestor
+    TreeNode* lca(TreeNode* root, int a, int b){
+        if(root == nullptr) return nullptr;
+
+        if(root->value == a || root->value == b) return root;
+
+        TreeNode* left = lca(root->left, a, b);
+        TreeNode* right = lca(root->right, a,b);
+
+        if(left && right) return root;
+
+        return left ? left : right;
+    }
+
+    // Max root to leaf path sum 
+    int maxpathsum(TreeNode* root){
+        if(root == nullptr) return 0;
+
+        if(root->left == nullptr && root->right == nullptr){
+            return root->value;
+        }
+
+        int left = maxpathsum(root->left);
+        int right = maxpathsum(root->right);
+
+        return root->value + max(left, right);
+    }
+
+    //  count of root to leaf path equal to K
+    int countpath(TreeNode* root, int target){
+        if(root == nullptr) return 0;
+
+        if(root->left == nullptr && root->right == nullptr){
+            return (target = root->value);
+        }
+
+        target -= root->value;
+        return countpath(root->left, target) + countpath(root->right, target);
+    }
+    
+    // tree left view
+    vector<int> leftview(TreeNode* root){
+        queue<TreeNode*> q;
+        q.push(root);
+        vector<int> leftview;
+
+        while(!q.empty()){
+            int size = q.size();
+            for(int i = 0; i < size; i++){
+                TreeNode* curr = q.front();
+                q.pop();
+                if(i = 0){
+                    leftview.push_back(curr->value);
+                }
+                if(curr->left){
+                    q.push(curr->left);
+                }
+                if(curr->right){
+                    q.push(curr->right);
+                }
+            }
+        }
+        return leftview;
+    }
+
+    // tree right view
+    vector<int> rightview(TreeNode* root){
+        queue<TreeNode*> q;
+        q.push(root);
+
+        vector<int> rightview;
+        while(!q.empty()){
+            int size = q.size();
+            for( int i = 0; i < size; i++){
+                TreeNode* curr = q.front();
+                q.pop();
+                if(i = size - 1){
+                    rightview.push_back(curr->value);
+                }
+                if(curr->left){
+                    q.push(curr->left);
+                }
+                if(curr->right){
+                    q.push(curr->right);
+                }
+            }
+        }
+        return rightview;
+    }
+
+    // print with the N - serialise
+    void serialise(TreeNode* root){
+        if(root == nullptr){
+            cout << "N";
+            return;
+        }
+        // use any traversal here
+    }
+
+    // maxlevel sum
+    int maxlevelsum(TreeNode* root){
+        queue<TreeNode*> q;
+        q.push(root);
+
+        int maxsum = INT_MIN;
+        while(!q.empty()){
+            int size = q.size();
+            int levelsum = 0;
+            for(int i = 0; i < size; i++){
+                TreeNode* curr = q.front();
+                q.pop();
+                levelsum += curr->value;
+                if(curr->left){
+                    q.push(curr->left);
+                }
+                if(curr->right){
+                    q.push(curr->right);
+                }
+            }
+        }
+    }
+};
+
+int main() {
+    TreeNode* root = new TreeNode(20);
+    return 0;
+}

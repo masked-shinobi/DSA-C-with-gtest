@@ -16,6 +16,7 @@ long long factorial(int n)
     return fact;
 }
 
+
 // nCr
 long long nCr(int n, int r)
 {
